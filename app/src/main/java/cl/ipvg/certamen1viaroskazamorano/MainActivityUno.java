@@ -26,10 +26,9 @@ public class MainActivityUno extends AppCompatActivity {
         Nombre= (TextView) findViewById(R.id.NaAlumno);
         Nombre.setText(Alumno1);
         Informacion2= (TextView) findViewById(R.id.Informacion1);
-        Informacion2.setText("El o la Estudiante"+Alumno1 +"   y su promedio es:");
+        Informacion2.setText("El o la Estudiante"+Alumno1 + "   y Su Promedio Es:");
 
         BtnR.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 Intent BtnR = new Intent(MainActivityUno.this,MainActivity.class);
