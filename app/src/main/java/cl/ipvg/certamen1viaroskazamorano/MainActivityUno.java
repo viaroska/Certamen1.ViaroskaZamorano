@@ -36,7 +36,6 @@ public class MainActivityUno extends AppCompatActivity {
                 startActivity(BtnR);
             }
         });
-
     }
     public void  RecibirInfoAlumnos(){
         Bundle Informacion2_ = getIntent().getExtras();
