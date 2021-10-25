@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivityUno extends AppCompatActivity {
     private TextView Nombre;
     private Button BtnR;
-    private TextView Informacion2;
+    private TextView Datos2;
 
 
     @Override
@@ -25,8 +25,8 @@ public class MainActivityUno extends AppCompatActivity {
         String Alumno1 = extras.getString("Nombre");
         Nombre= (TextView) findViewById(R.id.NaAlumno);
         Nombre.setText(Alumno1);
-        Informacion2= (TextView) findViewById(R.id.Informacion1);
-        Informacion2.setText("El o la Estudiante"+Alumno1 + "   y Su Promedio Es:");
+        Datos2= (TextView) findViewById(R.id.Informacion1);
+        Datos2.setText("El o la Estudiante"+Alumno1 + "   y Su Promedio Es:");
 
         BtnR.setOnClickListener(new View.OnClickListener() {
             @Override
