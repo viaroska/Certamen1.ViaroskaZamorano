@@ -19,7 +19,7 @@ public class MainActivityUno extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_uno);
-        RecibirInfoAlumnos();
+        AdquirirInfoAlumnos();
         BtnR=(Button)findViewById(R.id.btnB);
         Bundle extras = getIntent().getExtras();
         String Alumno1 = extras.getString("Nombre");
@@ -36,7 +36,7 @@ public class MainActivityUno extends AppCompatActivity {
             }
         });
     }
-    public void  RecibirInfoAlumnos(){
+    public void  AdquirirInfoAlumnos(){
         Bundle Informacion2_ = getIntent().getExtras();
     }
 }
