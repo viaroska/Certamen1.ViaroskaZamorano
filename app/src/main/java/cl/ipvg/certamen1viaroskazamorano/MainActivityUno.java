@@ -23,20 +23,16 @@ public class MainActivityUno extends AppCompatActivity {
         BtnR=(Button)findViewById(R.id.btnB);
         Bundle extras = getIntent().getExtras();
         String Alumno1 = extras.getString("Nombre");
-
-
         Nombre= (TextView) findViewById(R.id.NaAlumno);
         Nombre.setText(Alumno1);
-
         Informacion2= (TextView) findViewById(R.id.Informacion1);
-        Informacion2.setText("El Estudiante"+Alumno1 +" y su promedio es:");
+        Informacion2.setText("El o la Estudiante"+Alumno1 +"   y su promedio es:");
 
         BtnR.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent BtnR = new Intent(MainActivityUno.this,MainActivity.class);
-
                 startActivity(BtnR);
             }
         });
@@ -44,6 +40,5 @@ public class MainActivityUno extends AppCompatActivity {
     }
     public void  RecibirInfoAlumnos(){
         Bundle Informacion2_ = getIntent().getExtras();
-
     }
 }

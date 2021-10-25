@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 act.putExtra("Nombre",Nombre.getText().toString());
-
                 Intent BtnCalcular = new Intent(MainActivity.this,MainActivityUno.class);
-
                 startActivity(act);
             }
         });
